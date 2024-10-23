@@ -1,0 +1,314 @@
+/* ====GENERALES==== */
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik",sans-serif;
+}
+/* ===HEADERS=== */
+.container_principalHeader{
+  width: 100vw;
+  height: 8vh;
+  background-color: rgb(44, 153, 153);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.container_contentHeader{
+  width: 65%;
+  justify-content: space-between;
+  padding: 0.4rem;
+  gap: 0.3rem;
+}
+.headerSearch{
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.inputHeader{
+  border-radius: 0.4rem;
+  border: none;
+  padding: 0.4rem;
+  outline: none;
+  height: 3vh;
+  width: 18vw;
+  font-size: 1.7vh;
+}
+.buttonSearch {
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.4rem;
+  padding: 0.4rem;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  font-size: 1.8vh;
+  gap: 0.3rem;
+  width: 11vw;
+  justify-content: space-around;
+  align-items: center;
+  transition: 0.2s ease;
+}
+.buttonSearch:hover{
+  cursor: pointer;
+  background-color: rgb(65, 214, 214);
+}
+.button_Add{
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.4rem;
+  padding: 0.6rem;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  font-size: 1.8vh;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  gap: 0.5rem;
+  transition: 0.2s ease;
+
+}
+.button_Add:hover{
+  cursor: pointer;
+  background-color: rgb(65, 214, 214);
+}
+
+/* ==MAIN== */
+.container_view{
+  display: grid;
+  grid-template-columns: 0.3fr 0.7fr; /* Corrección */
+}
+
+.listAside{
+height: 92vh;
+}
+
+
+
+
+.store{
+  max-height: 92vh;
+  overflow-y: auto;
+  background-color: rgb(197, 248, 248);
+  width: 100%;
+}
+.containerTargetItem{
+  width: 25vw;
+  height: 35vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0.4rem;
+  border: 1px solid black;
+  border-radius: 0.4rem;
+}
+.containerTargetItem:hover{
+  cursor: pointer;
+  transform: scale(1.08);
+  transition: 0.2s ease;
+}
+.sectionStore{
+  background-color: white;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+.containerProductStore{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 2vh;
+
+}
+
+.sectionStore img{
+  width: 15vw;
+  border-radius: 0.4rem;
+
+}
+.containerTargetItem h2{
+  font-size: 2vh;
+  text-align: center;
+}
+
+.containerTitleSection h3{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-bottom: 1px solid grey;
+}
+.containerTitleSection h3{
+  margin: 1rem;
+  font-size: 3vh;
+  
+}
+.targetProps{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-direction: column;
+
+}
+
+
+/* ==LISTASIDE== */
+.listAside{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.listAside h2{
+  margin-top: 2vh;
+  display: flex;
+  font-size: 3vh;
+  justify-content: center;
+  align-items: center;
+}
+.listAside ul{
+  margin-top: 3vh;
+  list-style: none;
+  flex-direction: column;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  gap: 1vh;
+}
+.listAside ul li{
+  font-size: 2vh;
+  font-weight: 500;
+  padding: 0.4rem;
+  border-radius: 0.4rem;
+}
+.listAside ul li:hover{
+  cursor: pointer;
+  background-color: rgb(44, 153, 153);
+  color: white;
+
+}
+.liActive{
+  background-color: rgb(44, 153, 153);
+  color: white;
+}
+
+/* ==POPUP== */
+.popUpContainer_Principal{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(4px);
+}
+
+.popUpContainer{
+  width: 50vw;
+  height: 50vh;
+  background-color: white;
+  box-shadow: 5px 2px 10px rgba(0,0,0,0.3);
+  border-radius: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.containerTitlePopUp{
+  width: 100%;
+  text-align: center;
+}
+.ContainerInputsPopUp{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2vh;
+
+}
+.ContainerInputsPopUp input, select{
+  width: 60%;
+  border: solid rgb(165, 163, 163);
+  padding: 0.4rem;
+  border-radius: 0.4rem;
+}
+
+.containerButtonsPopUp{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+
+}
+.buttonPopUp{
+  padding: 0.6rem;
+  border: none;
+  border-radius: 0.4rem;
+  font-size: 2vh;
+}
+.cancel{
+  background-color: rgb(240, 240, 197);
+}
+.cancel:hover{
+  cursor: pointer;
+}
+.accept{
+  background-color: greenyellow;
+}
+.accept:hover{
+  cursor: pointer;
+}
+.delete{
+  background-color: red;
+}
+.delete:hover{
+  cursor: pointer;
+}
+
+::-webkit-scrollbar{
+  width: 0.7rem;
+  background-color: white;
+  border-radius: 0.4 rem;
+}
+::-webkit-scrollbar-thumb{
+  background-color: rgb(69, 71, 201);
+  border-radius: 0.4rem;
+
+}
+::-webkit-scrollbar-thumb:hover{
+  cursor: pointer;
+  background-color: rgb(84, 96, 202);
+}
+/* Media querys*/
+
+@media screen and (min-width:1280px){
+  
+  /*SCROLLBAR*/
+
+  ::-webkit-scrollbar{
+    width: 0.7rem;
+    background-color: white;
+    border-radius: 0.4 rem;
+  }
+  ::-webkit-scrollbar-thumb{
+    background-color: rgb(46, 144, 151);
+    border-radius: 0.4rem;
+
+  }
+  ::-webkit-scrollbar-thumb:hover{
+    cursor: pointer;
+    background-color: rgb(84, 202, 202);
+  }
+  .containerTargetItem{
+    width: 15vw;
+  }
+  .containerProductStore{
+
+    grid-template-columns: repeat(4,0.6fr);
+  
+  }
+
+
+}
